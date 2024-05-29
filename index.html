@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main class="container">
+      <dialog id="modal">
+        <div>
+          <img src="./assets/checkCircle.svg" />
+          <p>Message Sent!</p>
+        </div>
+        <span>Thanks for completing the form. We'll be in touch soon!</span>
+      </dialog>
+      <div class="wrapprer">
+        <h2 class="title">Contact Us</h2>
+        <form action="#" id="form" method="post">
+          <div class="formName">
+            <div>
+              <label for="firstName">First Name <span>*</span></label>
+              <input type="text" name="firstName" id="firstName" />
+              <span class="span-required" id="span-error"></span>
+            </div>
+            <div>
+              <label for="lastName">Last Name <span>*</span></label>
+              <input type="text" name="lastName" id="lastName" />
+              <span class="span-required" id="span-error"></span>
+            </div>
+          </div>
+          <div class="formEmail">
+            <label for="email">E-mail adress <span>*</span></label>
+            <input type="email" name="email" id="email" />
+            <span class="span-required" id="span-error"></span>
+          </div>
+          <div class="formRadio" id="radio">
+            <label for="">Query type <span>*</span></label>
+            <div class="queryFlex">
+              <div class="radio">
+                <input
+                  type="radio"
+                  name="queryType"
+                  id="plan1"
+                  value="generalEnquiry"
+                />
+                <label for="plan1">General Enquiry</label>
+              </div>
+              <div class="radio">
+                <input
+                  type="radio"
+                  name="queryType"
+                  id="plan2"
+                  value="supportEnquiry"
+                />
+                <label for="plan2">Support Enquiry</label>
+              </div>
+            </div>
+            <span class="span-required" id="span-error"></span>
+          </div>
+          <div class="formMessage">
+            <label for="">Message <span>*</span></label>
+            <textarea name="text" id="message"></textarea>
+            <span class="span-required" id="span-error"></span>
+            <div class="check">
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms"
+                >i consent to being contacted by the team <span>*</span></label
+              >
+            </div>
+            <span class="span-required" id="span-error"></span>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by
+      <a href="https://www.frontendmentor.io/profile/JoeSeraphy"
+        >Joelson Silva</a
+      >.
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

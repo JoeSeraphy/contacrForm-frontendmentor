@@ -1,0 +1,264 @@
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .wrapprer {
+  background-color: var(--White-);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 1.5rem;
+  position: relative;
+  margin-top: 6rem;
+}
+
+.container .wrapprer .title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.container .wrapprer .formName {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.container .wrapprer .formName label {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.container .wrapprer .formName label span,
+.container .wrapprer .formEmail label span,
+.container .wrapprer .formRadio label span,
+.container .wrapprer .formMessage label span {
+  color: var(--Green-600-);
+  font-weight: 700;
+}
+
+.container .wrapprer .formName input {
+  background: transparent;
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  border: 1px solid var(--Grey-900-);
+  outline: none;
+}
+
+.container .wrapprer .formEmail {
+  margin-top: 1.6rem;
+}
+
+.container .wrapprer .formEmail label {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.container .wrapprer .formEmail input {
+  background: transparent;
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  border: 1px solid var(--Grey-900-);
+  outline: none;
+}
+
+.container .wrapprer .formName input:focus,
+.container .wrapprer .formName input:hover,
+.container .wrapprer .formEmail input:focus,
+.container .wrapprer .formEmail input:hover,
+.container .wrapprer .formMessage textarea:focus,
+.container .wrapprer .formMessage textarea:hover {
+  border: 1.5px solid var(--Green-600-);
+}
+
+.container .wrapprer .formRadio {
+  margin-top: 1.6rem;
+}
+
+.container .wrapprer .formRadio label {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.container .wrapprer .formRadio .queryFlex {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .wrapprer .formRadio .queryFlex .radio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--Grey-900-);
+  border-radius: 8px;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.container .wrapprer .formRadio .queryFlex .radio:hover {
+  border: 1px solid var(--Green-600-);
+}
+
+.container .wrapprer .formRadio .queryFlex .radio:has(:checked) {
+  background-color: var(--Green-200-);
+  border: 1px solid var(--Green-600-);
+}
+
+.container .wrapprer .formRadio .queryFlex .radio input[type="radio"] {
+  appearance: none;
+  border: 1px solid var(--Grey-900-);
+  padding: 0.4rem;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.container .wrapprer .formRadio .queryFlex .radio input[type="radio"]:focus {
+  border: 1.5px solid var(--Green-600-);
+}
+
+.container .wrapprer .formRadio .queryFlex .radio input[type="radio"]:checked {
+  border: 1px solid var(--Green-600-);
+  background-image: radial-gradient(#0c7d69 50%, #ffff 40%);
+}
+
+.container .wrapprer .formMessage {
+  margin-top: 0.75rem;
+}
+
+.container .wrapprer .formMessage label {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.container .wrapprer .formMessage textarea {
+  width: 100%;
+  height: 8rem;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  outline: none;
+  border: 1px solid var(--Grey-900-);
+  border-radius: 8px;
+  padding: 0.75rem;
+  resize: none;
+}
+
+.container .wrapprer .formMessage .check {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .wrapprer .formMessage .check label {
+  cursor: pointer;
+}
+
+.container .wrapprer .formMessage .check input[type="checkbox"] {
+  appearance: none;
+  border: 1px solid var(--Grey-900-);
+  outline: none;
+  border-radius: 2px;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+}
+
+.container .wrapprer .formMessage .check input[type="checkbox"]:checked {
+  border: 1px solid var(--Green-600-);
+  background-color: var(--Green-600-);
+}
+
+.formMessage .check input[type="checkbox"]:checked::before {
+  content: url("/assets/check.svg");
+}
+
+.container .wrapprer .btn {
+  margin: 2rem 0;
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--Green-600-);
+  color: var(--White-);
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 0.75rem;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+.container .wrapprer .btn:hover {
+  background-color: #05332b;
+}
+
+.error {
+  border: 1px solid var(--Red-);
+}
+
+.span-required {
+  color: var(--Red-);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+dialog {
+  border: none;
+  border-radius: 8px;
+  background-color: #05332b;
+  color: #ffff;
+  padding: 2rem 1rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  margin: 0.5rem auto;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+dialog div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+dialog div img {
+  width: 20px;
+  height: 20px;
+}
+
+dialog div p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+dialog span {
+  font-size: 1rem;
+}

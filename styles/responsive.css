@@ -1,0 +1,23 @@
+@media (max-width: 426px) {
+  html {
+    font-size: 87.5%;
+  }
+  .container {
+    margin: 2rem 0;
+    padding: 0 16px;
+  }
+
+  .container .wrapprer .formName {
+    display: grid;
+  }
+
+  .container .wrapprer .formRadio .queryFlex {
+    display: grid;
+  }
+  .container .wrapprer .formRadio .queryFlex .radio {
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
